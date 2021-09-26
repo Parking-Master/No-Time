@@ -10,7 +10,8 @@ Try loading at least 10 JS libraries or 10 CSS libraries at once. Then, test the
 Basically, It takes the slow-loading speed of a page, then minifies it by half (or less).
 ## How to use it
 There is no downloader. You can easily get it with CDN:<br>
-`<script src="//cdn.jsdelivr.net/gh/Parking-Master/No-Time@latest/no-time.js" async></script>`
+`<script type="text/javascript" src="//cdn.jsdelivr.net/gh/Parking-Master/No-Time@latest/no-time.js" async defer></script>`<br>
+And make sure to put it right before the closing body tag
 ## How it works
 It checks if the load speed _(ms)_ is higher than the loading speed -1000 or if the document is ready but the window is still loading.<br>
 But, it can also redefine the window even when it is still loading. If there is an error loading the document, **No-Time** can reload the page and cache.
